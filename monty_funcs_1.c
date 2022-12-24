@@ -11,7 +11,7 @@ void monty_swap(stack_t **stack, unsigned int line_number);
  * @stack: a pointer to the top mode node of a stack_t linked list
  * @line_number: the current working line number of a monty bytecodes
  */
-void monty_push(stack_t **stack, unsigned int line_nnumber)
+void monty_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp, *new;
 	int i;

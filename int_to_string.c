@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-char *get_int(int num);
+char *gget_int(int num);
 unsigned int _abs(int);
 int get_numbase_len(unsigned int num, unsigned int base);
 void fill_numbase_buff(unsigned int num, unsigned int base,
@@ -21,7 +21,7 @@ char *gget_int(int num)
 	temp = _abs(num);
 	length = get_numbase_len(temp, 10);
 
-	if (num < 0 || num_l < 0)
+	if (num < 0 || num_1 < 0)
 		length++; /* negative sign */
 	ret = malloc(length + 1); /* create new string */
 	if (!ret)
@@ -72,7 +72,7 @@ void fill_numbase_buff(unsigned int num, unsigned int base,
 		if (rem > 9)
 			buff[i] = rem + 87;
 		else
-			buff[i] rem + '0';
+			buff[i] = rem + '0';
 		num /= base;
 		i--;
 	}
